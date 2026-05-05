@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoyTech Sustentável | Agrinho 2026</title>
+    <style>
+        /* Estilos para um visual moderno e rural */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f2;
+            color: #333;
+        }
+
+        header {
+            background-color: #2d5a27; /* Verde soja */
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                        url('https://images.unsplash.com/photo-1592982537447-6f2a6a0c3c8b?auto=format&fit=crop&q=80&w=1000'); /* Imagem de plantação */
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 5px solid #2d5a27;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .card h3 {
+            color: #2d5a27;
+            margin-top: 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        .btn-acao {
+            background-color: #8bc34a;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>SoyTech <span style="color: #8bc34a;">Sustentável</span></h1>
+    <nav>
+        <a href="#home">Início</a>
+        <a href="#praticas">Práticas</a>
+        <a href="#calculadora">Calculadora</a>
+        <a href="#sobre">Agrinho 2026</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Agro Forte, Futuro Sustentável</h2>
+    <p>Tecnologia e equilíbrio para a produção de soja do amanhã.</p>
+</section>
+
+<div class="container">
+    <h2 style="text-align: center;">Pilares da Soja Sustentável</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Manejo de Solo</h3>
+            <p>Adoção do Plantio Direto e rotação de culturas para manter a umidade e os nutrientes da terra.</p>
+            <a href="#" class="btn-acao">Saiba Mais</a>
+        </div>
+
+        <div class="card">
+            <h3>Controle Biológico</h3>
+            <p>Uso de inimigos naturais para combater pragas, reduzindo o uso de defensivos químicos agressivos.</p>
+            <a href="#" class="btn-acao">Ver Guia</a>
+        </div>
+
+        <div class="card">
+            <h3>Eficiência Hídrica</h3>
+            <p>Sistemas de irrigação inteligente que economizam água e garantem a produtividade em secas.</p>
+            <a href="#" class="btn-acao">Calcular Uso</a>
+        </div>
+    </div>
+
+    <section style="margin-top: 3rem; background: #e8f5e9; padding: 2rem; border-radius: 10px;">
+        <h3>O Equilíbrio na Produção</h3>
+        <p>Produzir soja de forma sustentável significa otimizar a área já existente, protegendo as APPs e aumentando a produtividade por hectare através da ciência.</p>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2026 Projeto Agrinho - Desenvolvimento Sustentável no Campo</p>
+</footer>
+
+</body>
+</html>
