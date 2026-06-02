@@ -1,143 +1,265 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SoyTech Sustentável | Agrinho 2026</title>
-    <style>
-        /* Estilos para um visual moderno e rural */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f7f2;
-            color: #333;
-        }
-
-        header {
-            background-color: #2d5a27; /* Verde soja */
-            color: white;
-            padding: 1rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 20px;
-            font-weight: bold;
-        }
-
-        .hero {
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-                        url('https://images.unsplash.com/photo-1592982537447-6f2a6a0c3c8b?auto=format&fit=crop&q=80&w=1000'); /* Imagem de plantação */
-            background-size: cover;
-            background-position: center;
-            height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-align: center;
-        }
-
-        .container {
-            max-width: 1100px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-
-        .card {
-            background: white;
-            padding: 1.5rem;
-            border-radius: 8px;
-            border-left: 5px solid #2d5a27;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-
-        .card h3 {
-            color: #2d5a27;
-            margin-top: 0;
-        }
-
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-            margin-top: 2rem;
-        }
-
-        .btn-acao {
-            background-color: #8bc34a;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            text-decoration: none;
-            display: inline-block;
-            margin-top: 10px;
-        }
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Agrinho 2026: soluções agro para soja, milho e pecuária. Produtos, serviços técnicos e inovação para produtores rurais." />
+    <meta name="keywords" content="fertilizante para soja no Mato Grosso, manejo de pragas no milho, agricultura de precisão, assistência técnica agro, consultoria rural" />
+    <title>Agrinho 2026 | Soluções Agro Sustentáveis</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+    <header>
+        <a class="brand" href="#home">Agrinho</a>
+        <nav aria-label="Menu principal">
+            <a href="#sobre">Quem Somos</a>
+            <a href="#produtos">Produtos</a>
+            <a href="#inovacao">Inovação</a>
+            <a href="#noticias">Notícias</a>
+            <a href="#contato">Contato</a>
+        </nav>
+        <a class="btn-secondary header-cta" href="#contato">Fale com um Consultor</a>
+    </header>
 
-<header>
-    <h1>SoyTech <span style="color: #8bc34a;">Sustentável</span></h1>
-    <nav>
-        <a href="#home">Início</a>
-        <a href="#praticas">Práticas</a>
-        <a href="#calculadora">Calculadora</a>
-        <a href="#sobre">Agrinho 2026</a>
-    </nav>
-</header>
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow">Produção agro inteligente</p>
+                <h1>Mais produtividade, menos desperdício e suporte técnico para o seu campo</h1>
+                <p>Equipe especializada em sementes, fertilizantes, maquinários e consultoria para soja, milho e pecuária no Mato Grosso.</p>
+                <div class="hero-actions">
+                    <a class="btn-primary" href="#contato">Fale com um consultor</a>
+                    <a class="btn-secondary" href="#produtos">Ver catálogo</a>
+                </div>
+            </div>
+            <div class="hero-widget">
+                <div class="widget-card">
+                    <span class="widget-label">Cotações de hoje</span>
+                    <div class="widget-row">
+                        <div>
+                            <strong>Soja</strong>
+                            <p>R$ 152,40/sc</p>
+                        </div>
+                        <div>
+                            <strong>Milho</strong>
+                            <p>R$ 72,80/sc</p>
+                        </div>
+                        <div>
+                            <strong>Boi gordo</strong>
+                            <p>R$ 345,90/@</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="widget-card">
+                    <span class="widget-label">Previsão regional</span>
+                    <div class="widget-row">
+                        <div>
+                            <strong>Campo Verde - MT</strong>
+                            <p>Sol com nuvens</p>
+                        </div>
+                        <div>
+                            <strong>Temp.</strong>
+                            <p>22°C / 30°C</p>
+                        </div>
+                        <div>
+                            <strong>Chuva</strong>
+                            <p>10% chance</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<section class="hero">
-    <h2>Agro Forte, Futuro Sustentável</h2>
-    <p>Tecnologia e equilíbrio para a produção de soja do amanhã.</p>
-</section>
+        <section id="sobre" class="section intro">
+            <div class="section-copy">
+                <span class="section-eyebrow">Quem Somos</span>
+                <h2>Marca com história no campo e compromisso técnico</h2>
+                <p>Desde 2026, o Agrinho apoia produtores rurais com portfólio completo de sementes, fertilizantes, maquinários e consultoria técnica. Somos referência em confiança, atendimento local e soluções práticas para o agro.</p>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <strong>+15</strong>
+                    <p>Anos de experiência</p>
+                </div>
+                <div class="stat-card">
+                    <strong>9</strong>
+                    <p>Certificações técnicas</p>
+                </div>
+                <div class="stat-card">
+                    <strong>1200+</strong>
+                    <p>Produtores atendidos</p>
+                </div>
+            </div>
+        </section>
 
-<div class="container">
-    <h2 style="text-align: center;">Pilares da Soja Sustentável</h2>
-    <div class="grid">
-        <div class="card">
-            <h3>Manejo de Solo</h3>
-            <p>Adoção do Plantio Direto e rotação de culturas para manter a umidade e os nutrientes da terra.</p>
-            <a href="#" class="btn-acao">Saiba Mais</a>
+        <section id="produtos" class="section">
+            <div class="section-header">
+                <span class="section-eyebrow">Nossos Produtos</span>
+                <h2>Categorias pensadas para cada etapa da safra</h2>
+            </div>
+            <div class="category-grid">
+                <article class="category-card">
+                    <h3>Sementes</h3>
+                    <p>Sementes tratadas e adaptadas para soja e milho em Mato Grosso.</p>
+                </article>
+                <article class="category-card">
+                    <h3>Fertilizantes</h3>
+                    <p>Formulações específicas para solo de cerrado e alta produtividade.</p>
+                </article>
+                <article class="category-card">
+                    <h3>Maquinários</h3>
+                    <p>Implementos e equipamentos revisados para colheita e plantio.</p>
+                </article>
+                <article class="category-card">
+                    <h3>Consultoria</h3>
+                    <p>Assistência técnica no manejo, nutrição e planejamento de safra.</p>
+                </article>
+            </div>
+
+            <div class="product-grid">
+                <article class="product-card">
+                    <h3>Semente Soja Premium</h3>
+                    <p>Alta resistência a doenças, excelente vigor inicial e adaptação à região Centro-Oeste.</p>
+                    <div class="product-meta">
+                        <span>1 saco 20kg</span>
+                        <span>Garantia técnica</span>
+                    </div>
+                    <a href="#" class="btn-link">Ficha técnica (PDF)</a>
+                </article>
+                <article class="product-card">
+                    <h3>Fertilizante NPK 20-05-20</h3>
+                    <p>Formulação equilibrada para fase de crescimento e desenvolvimento vegetativo.</p>
+                    <div class="product-meta">
+                        <span>Envio rápido</span>
+                        <span>Dosagem por cultura</span>
+                    </div>
+                    <a href="#" class="btn-link">Bula técnica (PDF)</a>
+                </article>
+                <article class="product-card">
+                    <h3>Implemento Agrícola</h3>
+                    <p>Equipamento robusto para plantio direto com revisão pré-entrega e assistência técnica.</p>
+                    <div class="product-meta">
+                        <span>Suporte local</span>
+                        <span>Manual digital</span>
+                    </div>
+                    <a href="#" class="btn-link">Catálogo (PDF)</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="inovacao" class="section highlight">
+            <div class="section-header">
+                <span class="section-eyebrow">Tecnologia e Inovação</span>
+                <h2>Dados e agricultura de precisão para decisões mais certas</h2>
+            </div>
+            <div class="feature-grid">
+                <article class="feature-card">
+                    <h3>Agricultura de precisão</h3>
+                    <p>Mapeamento de solo, monitoramento de umidade e aplicações localizadas para reduzir custo e aumentar resultado.</p>
+                </article>
+                <article class="feature-card">
+                    <h3>Análise de dados</h3>
+                    <p>Relatórios de produtividade e recomendações práticas com base em parâmetros reais da fazenda.</p>
+                </article>
+                <article class="feature-card">
+                    <h3>Sustentabilidade</h3>
+                    <p>Práticas de conservação de solo, controle biológico e integração lavoura-pecuária.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="noticias" class="section">
+            <div class="section-header">
+                <span class="section-eyebrow">Conteúdo técnico</span>
+                <h2>Notícias e artigos para o produtor rural</h2>
+            </div>
+            <div class="news-grid">
+                <article class="news-card">
+                    <h3>Manejo de pragas no milho</h3>
+                    <p>Dicas atualizadas para proteger a lavoura usando produtos e práticas mais seguros.</p>
+                    <a href="#" class="btn-link">Ler artigo</a>
+                </article>
+                <article class="news-card">
+                    <h3>Estratégia para a soja 2026</h3>
+                    <p>Como ajustar plantio e adubação para ser mais competitivo no mercado de soja.</p>
+                    <a href="#" class="btn-link">Ler artigo</a>
+                </article>
+                <article class="news-card">
+                    <h3>Clima e safra</h3>
+                    <p>Previsão de tempo e recomendações para reduzir riscos no período de chuvas.</p>
+                    <a href="#" class="btn-link">Ler artigo</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="section testimonials">
+            <div class="section-header">
+                <span class="section-eyebrow">Depoimentos</span>
+                <h2>Produtores que já aumentaram a safra com Agrinho</h2>
+            </div>
+            <div class="testimonials-grid">
+                <article class="testimonial-card">
+                    <p>“O suporte técnico ajudou a escolher a semente ideal para nosso solo. A produtividade subiu 18% em relação ao ano anterior.”</p>
+                    <strong>João Silva, produtor em Primavera do Leste</strong>
+                </article>
+                <article class="testimonial-card">
+                    <p>“A consultoria de nutrição e o planejamento de adubação reduziram o custo e melhoraram o resultado da lavoura.”</p>
+                    <strong>Maria Souza, cooperativa local</strong>
+                </article>
+            </div>
+        </section>
+
+        <section id="contato" class="section contact-section">
+            <div class="contact-grid">
+                <div class="contact-copy">
+                    <span class="section-eyebrow">Contato e assistência técnica</span>
+                    <h2>Fale com nosso time agro</h2>
+                    <p>Envie sua dúvida, solicite catálogo de produtos ou agende uma visita técnica. Atendemos produtores em todo o Mato Grosso.</p>
+
+                    <div class="contact-info">
+                        <div>
+                            <strong>Endereço</strong>
+                            <p>Av. das Lavouras, 1024 - Campo Verde, MT</p>
+                        </div>
+                        <div>
+                            <strong>E-mail</strong>
+                            <p>contato@agrinho.com.br</p>
+                        </div>
+                        <div>
+                            <strong>Telefone</strong>
+                            <p>(65) 9 9999-9999</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" action="#" method="post">
+                    <label for="name">Nome completo</label>
+                    <input type="text" id="name" name="name" placeholder="Seu nome" required />
+
+                    <label for="company">Fazenda / Empresa</label>
+                    <input type="text" id="company" name="company" placeholder="Nome da fazenda ou empresa" />
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+
+                    <label for="message">Mensagem</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Conte-nos sua necessidade"></textarea>
+
+                    <button type="submit" class="btn-primary">Enviar mensagem</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <a class="whatsapp-button" href="https://wa.me/5565999999999?text=Olá%20Agrinho%2C%20gostaria%20de%20falar%20com%20um%20consultor." target="_blank" rel="noopener noreferrer">
+        <span>WhatsApp</span>
+    </a>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2026 Agrinho 2026. Soluções agro com foco em tecnologia e sustentabilidade.</p>
+            <p>Produção rural, assistência técnica e produtos para soja, milho e pecuária.</p>
         </div>
-
-        <div class="card">
-            <h3>Controle Biológico</h3>
-            <p>Uso de inimigos naturais para combater pragas, reduzindo o uso de defensivos químicos agressivos.</p>
-            <a href="#" class="btn-acao">Ver Guia</a>
-        </div>
-
-        <div class="card">
-            <h3>Eficiência Hídrica</h3>
-            <p>Sistemas de irrigação inteligente que economizam água e garantem a produtividade em secas.</p>
-            <a href="#" class="btn-acao">Calcular Uso</a>
-        </div>
-    </div>
-
-    <section style="margin-top: 3rem; background: #e8f5e9; padding: 2rem; border-radius: 10px;">
-        <h3>O Equilíbrio na Produção</h3>
-        <p>Produzir soja de forma sustentável significa otimizar a área já existente, protegendo as APPs e aumentando a produtividade por hectare através da ciência.</p>
-    </section>
-</div>
-
-<footer>
-    <p>&copy; 2026 Projeto Agrinho - Desenvolvimento Sustentável no Campo</p>
-</footer>
-
+    </footer>
 </body>
 </html>
